@@ -1,0 +1,28 @@
+{
+  "name": "distbranch",
+  "version": "0.0.1",
+  "description": "Create special dist branch from master and other branches",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arusakov/distbranch.git"
+  },
+  "keywords": [
+    "node",
+    "git",
+    "branch"
+  ],
+  "author": "Alexander Rusakov <a_s_rusakov@mail.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arusakov/distbranch/issues"
+  },
+  "homepage": "https://github.com/arusakov/distbranch#readme",
+  "dependencies": {
+    "co": "^4.6.0",
+    "nodegit": "^0.5.0"
+  }
+}
