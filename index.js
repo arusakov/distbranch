@@ -72,4 +72,4 @@ function createDistBranch(pathToFolder) {
   execSync(cmds.git_push_origin + '-f ' + DIST)
 }
 
-createDistBranch(process.cwd());
+module.exports = createDistBranch;
