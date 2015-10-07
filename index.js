@@ -13,7 +13,7 @@ var cmds = {
   git_branch_all: 'git branch -a',
   git_branch_D: 'git branch -D ',
   git_checkout: 'git checkout ',
-  git_fetch: 'git fetch',
+  git_fetch: 'git fetch ',
   git_merge: 'git merge ',
   git_pull_origin: 'git pull origin ',
   git_push_origin: 'git push origin '
@@ -40,7 +40,7 @@ function filterBranches(branches) {
 function createDistBranch(pathToFolder) {
   statSync(path.join(pathToFolder, '.git'));
 
-  execSync(cmds.git_fetch);
+  execSync(cmds.git_fetch + UPSTREAM);
 
   execSync(cmds.git_checkout + MASTER);
   try {

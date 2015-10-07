@@ -1,6 +1,6 @@
 {
   "name": "distbranch",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Create special dist branch from master and other branches",
   "main": "index.js",
   "bin": "cli.js",

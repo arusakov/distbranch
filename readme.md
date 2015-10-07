@@ -12,7 +12,7 @@ What does distbranch tool?
 ---------------
 Chain of git commands (5, 7 - pseudo code):
 
-1. git fetch
+1. git fetch upstream
 * git checkout master
 * git merge upstream/master (without exception if upstream not set)
 * git branch -D dist && git checkout -b dist
