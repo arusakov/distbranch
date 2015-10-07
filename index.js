@@ -20,6 +20,7 @@ var cmds = {
 };
 
 function filterBranches(branches) {
+  // todo arusakov all origins' branches, not only local
   var arr = branches.trim().split(/\*\s+|\s*\r?\n\s*/g);
   var filtered = [];
   var dict = {};
@@ -58,14 +59,14 @@ function createDistBranch(pathToFolder) {
   var branches = execSync(cmds.git_branch_all).toString();
   branches = filterBranches(branches);
 
-  branches.forEach((br) => {
+  branches.forEach(function(br) {
     execSync(cmds.git_checkout + br);
     execSync(cmds.git_pull_origin + br);
   });
 
   execSync(cmds.git_checkout + DIST);
 
-  branches.forEach((br) => {
+  branches.forEach(function(br) {
     execSync(cmds.git_merge + '-m "Merge branch ' + br + '" ' + br);
   });
 
