@@ -1,5 +1,7 @@
 distbranch
 =========
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/arusakov/distbranch.svg)](https://greenkeeper.io/)
 CLI tool for create special "dist" (distribution) branch from all local other branches merged into master.
 
 Install this globally and you'll have access to the `distbranch` command anywhere on your system.
